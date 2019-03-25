@@ -10,6 +10,31 @@
 
 // Your code :
 
+
+function multiply(x, y) {
+  var total = 0;
+  if (x == 0 || y == 0) {
+    return 0;
+  } else if (x < 0 && y > 0) {
+    for (var i = 0; i < y; i++) {
+      total += x;
+    }
+  } else if (x < 0 && y < 0) {
+    for (var i = y; i < 0; i++) {
+      total += Math.abs(x);
+    }
+  } else if (x > 0 && y > 0) {
+    for (var i = 0; i < x; i++) {
+      total += y;
+    }
+  } else if (x > 0 && y < 0) {
+    for (var i = y; i < 0; i++) {
+      total += x;
+    } return -Math.abs(total)
+  }
+  return total;
+
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -9,6 +9,19 @@
 
 // Your code :
 
+function sameSign(number_1, number_2) {
+    if (((number_1 < 0) && (number_2 < 0)) || ((number_1 == 0) &&  (number_2 == 0)) || ((number_1 > 0) && (number_2 > 0))) {
+        return true;
+    }       
+        else{
+
+        return false;
+}
+}
+
+
+    
+
 //* Begin of tests
 const assert = require('assert')
 
