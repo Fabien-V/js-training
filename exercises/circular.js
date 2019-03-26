@@ -9,6 +9,19 @@
 
 // Your code :
 
+var circular = new Object();
+circular.circular=circular
+
+/*var objet1 = new Object ;
+
+objet1.chaine="Bonjour!" ;
+objet1.affiche=function(){
+  alert(this.chaine) ;
+}
+
+objet1.affiche() ;
+*/
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -10,10 +10,15 @@
  *
  */
 
+function jadenCase(str) {
+  return str.capitalized
+}
+
 
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof jadenCase, 'function')
 
-assert.fail('You must write your own tests')
+
 // End of tests */
